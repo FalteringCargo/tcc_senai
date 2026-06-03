@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Senai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">[
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+
+
+</head>
+<body id="yan">
+    
+    <p id="titulo"> Coloque suas credenciais </p>
+    <img id="Senai" src="static/image.png" width="400px" height="250px">
+    <img id="roger" src="static/roger.png" width="400px" height="250px">
+  
+    <div id="email1"> 
+        <form action="/home">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu usuario" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg">Entrar</button>
+        </form>
+    </div>
+      <script>
+        const USUARIO = {
+            email: "usuario@senai.com",
+            senha: "senha123",
+            redirect: "/home"
+        };
+ 
+        const ADMIN = {
+            email: "admin@senai.com",
+            senha: "admin123",
+            redirect: "/admin"
+        };
+ 
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+ 
+            const email = document.getElementById("exampleFormControlInput1").value.trim();
+            const senha = document.getElementById("senhaInput").value.trim();
+            const erro = document.getElementById("erroLogin");
+ 
+            if (email === ADMIN.email && senha === ADMIN.senha) {
+                window.location.href = ADMIN.redirect;
+            } else if (email === USUARIO.email && senha === USUARIO.senha) {
+                window.location.href = USUARIO.redirect;
+            } else {
+                erro.style.display = "block";
+            }
+        });
+    </script>
+      
+</body> 
+</html> 

@@ -1,0 +1,109 @@
+#titulo {
+    position: absolute;
+    left: 1376px; 
+    top: 475px;
+    height: 30px;
+    width: 180px;
+    color: rgb(255, 255, 255); /* Cor do preenchimento da letra */
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+    font-family: Montserrat, "Montserrat Subrayada", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    
+
+    /* Adicione estas linhas para o contorno */
+    -webkit-text-stroke-width: 1px; /* Espessura da linha */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Cor da linha (mude para a cor que desejar) */
+}
+
+
+#yan{
+    background-color: #005281;
+    
+}
+#Senai{
+    position: absolute;
+    width: 400px; height: 400px;
+    left: 1282px; top: 67px;
+}
+#botao{
+    position: absolute;
+    left: 1340px; top: 700px;
+    border-radius: 5px;
+    width: 123px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+#email{
+position: relative;
+    left: 1335px; top: 560px;
+    border-radius: 10px;
+    height: 34px; 
+}
+#senha{
+     position: relative;
+    left: 1106px; top: 620px;
+    border-radius: 10px;
+    height: 34px;
+}
+#email1{
+    position: relative;
+    color: white;
+    left: 1365px; top: 500px;
+    height: 34px;
+    width: 200px;
+
+}
+#roger{
+    position: absolute;
+    height: 1080px; width: 1075px;
+    left: 1px;;
+    
+}
+#fundohome{
+    background-color: #005281;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#trabalhador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    }
+
+#container {
+    margin-top: 50px;
+}
+
+#opcoes {
+    margin-top: 30px;
+}
+
+.botao {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#botaofodacor{
+    background-color: #003380;
+}
+#azul{
+   position: absolute;
+    right: 0px;
+   bottom: 900px;
+    z-index: 1px;
+}
+#senaicanto{
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    z-index: 2px;
+}
