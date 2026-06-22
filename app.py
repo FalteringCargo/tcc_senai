@@ -17,3 +17,14 @@ def admin():
 if __name__ == '__main__':
     
     app.run(debug=True , host='0.0.0.0')
+
+import mysql.connector
+
+conexao = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="banco_de_dados"
+)
+
+print("Conectado com sucesso!")
