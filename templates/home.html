@@ -62,10 +62,9 @@
                 <th>Nome</th>
                 <th>Qtde Estoque</th>
                 <th>Descricao</th>
-                <th>Estoque min</th>
                 <th>Preço</th>
-                <th>Foto</th>
                 <th>Categoria</th>
+                <th>Foto</th>
             </tr>
         </thead>
         <tbody>
@@ -76,9 +75,7 @@
                 <td>{{item[2]}}</td>
                 <td>{{item[3]}}</td>
                 <td>{{item[4]}}</td>
-                <td>{{item[5]}}</td>
-                <td><button type="button" class="btn btn-primary" onclick="mostra_foto('{{item[6]}}')">Foto</button></td>
-                <td>{{item[7]}}</td>
+                <td><td><button type="button" class="btn btn-primary" onclick="mostra_foto('{{item[5]}}')">Foto</button></td></td>
             </tr>
             {%endfor%}
         </tbody>
